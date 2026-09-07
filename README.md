@@ -17,3 +17,7 @@ The system was validated through both offline corpus evaluation and online testi
 1. Classification Accuracy: Online testing against 600 active domains yielded a blocking rate of 98.00% and an allowing rate of 95.33%. The false negative rate was contained at 2.00% and the false positive rate at 4.67%, successfully meeting the specification targets of maintaining a minimum 95% accuracy and a maximum 5% error tolerance.
 2. Quality of Service (QoS): Under daily usage conditions from seven client devices, the system achieved a QoS index of 3.33 (Good) based on TIPHON standards. The integration of the inline machine learning inference layer maintained an average latency of 46.67 ms, perfectly matching the baseline network performance prior to the sinkhole's implementation.
 3. Scalability Limits: During stress testing under extreme load, the QoS index dropped to 2.67 (Fair) due to computational bottlenecks in the edge device's ARM processor. The heavy volume of feature extraction caused socket buffer queues to build up, resulting in latency surging to 416.39 ms and a query loss rate of 23.22%, despite reaching a peak throughput of 48.69 Queries Per Second (QPS)
+
+*Dataset Information
+Due to GitHub's file size limitations, the full dataset containing 5.1 million rows of DNS traffic could not be uploaded directly. However, the full dataset can be accessed and downloaded via the following link:
+https://drive.google.com/drive/folders/13ZEV6ksSrWvNLf7R-T7OG11Tlcx8LAcY?usp=sharing
